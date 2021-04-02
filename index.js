@@ -5,7 +5,8 @@ module.exports = function({registerErrors, joi}) {
     return class loginInterface extends require('ut-port-script')(...arguments) {
         get defaults() {
             return {
-                namespace: ['identity', 'permission']
+                namespace: ['identity', 'permission'],
+                imports: ['identity', 'permission']
             };
         }
 
